@@ -1,11 +1,13 @@
-import React from "react";
+import { FC } from "react";
 import "./App.css";
-import DenseAppBar from "./views/components/AppBarDense";
+import AppBarDense from "./views/components/AppBarDense";
+import SimpleCard from "./views/components/SimpleCard";
 
-function App() {
+const App: FC = () => {
   return (
     <div className="App">
-      <DenseAppBar></DenseAppBar>
+      <AppBarDense title="ポートフォリオ"></AppBarDense>
+      <SimpleCard></SimpleCard>
     </div>
   );
 }

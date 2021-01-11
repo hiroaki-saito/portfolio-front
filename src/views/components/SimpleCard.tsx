@@ -23,7 +23,11 @@ const useStyles = makeStyles({
   },
 });
 
-export default function SimpleCard() {
+type Props = {
+  title: string;
+};
+
+const SimpleCard = () => {
   const classes = useStyles();
   const bull = <span className={classes.bullet}>•</span>;
 
@@ -51,3 +55,5 @@ export default function SimpleCard() {
     </Card>
   );
 }
+
+export default SimpleCard;
